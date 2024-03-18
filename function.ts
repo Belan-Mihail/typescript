@@ -27,4 +27,19 @@ const getChannelName1: ChannelFunction = (name) => {
     return { name }
 }
 
-//22:50
+/////////////////////////
+const getNumbers = (...numbers: number[]) => {
+    return numbers
+}
+
+////////////////////
+function getCars(name:string, price?:number):string {
+    return price ? `Name ${name} price ${price}` : `Name ${name}` 
+}
+
+const getCar1 = getCars('bmw')
+const getCar2 = getCars('audi', 100000)
+// const getCar3 = getCars('audi', 100000, true) - doesnt work
+
+
+//25:05
