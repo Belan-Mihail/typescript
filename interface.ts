@@ -3,18 +3,18 @@ interface IUser {
     email:string
 }
 
-const user:IUser = {
+const user4:IUser = {
     name: 'Mike',
     email: 'eee@gmail.com'
 }
 
 // Type
-type TypeUser = {
+type TypeUser2 = {
     name:string
     email:string
 }
 
-const user1:TypeUser = {
+const user5:TypeUser2 = {
     name: 'Mike',
     email: 'eee@gmail.com'
 }
