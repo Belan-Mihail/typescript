@@ -44,15 +44,27 @@ const getChannelName1: ChannelFunction = (name) => {
     return { name }
 }
 
-/////////////////////////
+
+//Rest
 const getNumbers = (...numbers: number[]) => {
     return numbers
 }
+
+//rest js
+const createSkills = (name6, ...skills) => `${name6} my skills are: ${skills.join()}`
+
+
+//rest type
+const createSkills1 = (name6:string, ...skills1: Array<string>) => 
+        `${name6} my skills are ${skills1.join()}`
+
+createSkills1('Luke', "JS", "CSS", "HTML")
 
 ////////////////////
 function getCars(name:string, price?:number):string {
     return price ? `Name ${name} price ${price}` : `Name ${name}` 
 }
+
 
 const getCar1 = getCars('bmw')
 const getCar2 = getCars('audi', 100000)
